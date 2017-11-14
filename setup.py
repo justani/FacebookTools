@@ -20,17 +20,9 @@ REQUIRED = [
     'selenium',
 ]
 
-here = os.path.abspath(os.path.dirname(__file__))
-
-# Import the README and use it as the long-description.
-# Note: this will only work if 'README.rst' is present in your MANIFEST.in file!
-with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = '\n' + f.read()
-
-# Where the magic happens:
 setup(
     name=NAME,
-    version=0.1,
+    version=0.0.1,
     description=DESCRIPTION,
     long_description=long_description,
     author=AUTHOR,
