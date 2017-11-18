@@ -15,7 +15,7 @@ Prerequisites
 You will need to install Chrome WebDriver for this module to work.
 Chrome WebDriver can be found and installed from `here <https://sites.google.com/a/chromium.org/chromedriver/downloads>`_.
 
-Downloading
+Downloads
 ===========
 
 You can download the latest release `here <https://github.com/justani98/FacebookTools/releases>`_.
