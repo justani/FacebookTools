@@ -26,7 +26,9 @@ You can extract the tar.gz file and run::
     python3 setup.py install
 
 This will install the module facebookTools.
+
 Now open the `python3` terminal and import facebookTools::
+
     from facebookTools import groups
 
 You can now run the `leave()` function::

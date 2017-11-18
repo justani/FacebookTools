@@ -16,12 +16,24 @@ Chrome WebDriver can be found and installed from [here](https://sites.google.com
 
 #### For linux
 
-You can extract the tar.gz file and run:
+You can extract the tar.gz file and run (you may be required to give root permission):
 ```
 python3 setup.py install
 ```
-This will install the module FacebookTools
+This will install the module facebookTools.
 
-Then, you can use the module as follows...
+You can now run the leave() function.
+```
+groups.leave()
+```
+It will then ask you for your Facebook `username` and `password`.
+```
+Enter your Facebook username
+Password:
+Enter the keywords separated by space.
+Whenever a group name contain any of these keywords the group will be left.
+```
+
+You can enter the keyword in a single line separated by space. The group names which contain the entered keyword will be left.
 
 #TODO
