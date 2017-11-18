@@ -12,15 +12,23 @@ These instructions will get you a copy of the project up and running on your loc
 You will need to install Chrome WebDriver for this module to work.
 Chrome WebDriver can be found and installed from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). 
 
+### Downloads
+
+You can download the latest release [here](https://github.com/justani98/FacebookTools/releases).
+
 ### Installing
 
-#### For linux
+**linux**
 
 You can extract the tar.gz file and run (you may be required to give root permission):
 ```
 python3 setup.py install
 ```
 This will install the module facebookTools.
+Now open the `python3` terminal and import facebookTools
+```
+from facebookTools import groups
+```
 
 You can now run the leave() function.
 ```
