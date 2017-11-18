@@ -65,7 +65,7 @@ def leave():
 	username = input("Enter your Facebook username.\n")
 	password = getpass.getpass()
 	
-	keywords = input('''Enter the keywords seperated by space.
+	keywords = input('''Enter the keywords separated by space.
 Whenever a group name contain any of these keywords the group will be left.\n''').split()
 	
 	driver = login(username, password)
