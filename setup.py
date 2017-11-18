@@ -1,38 +1,33 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import io
-import os
-import sys
-from shutil import rmtree
-
 from setuptools import find_packages, setup, Command
+from codecs import open
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 # Package meta-data.
-NAME = 'leave_fb_groups'
-DESCRIPTION = 'Leave fb groups using keywords. '
-URL = 'https://github.com/me/myproject'
+NAME = 'FacebookTools'
+DESCRIPTION = 'Python module for doing batch tasks on your Facebook profile.'
+URL = 'https://github.com/justani98/FacebookTools'
 EMAIL = 'justani98@gmail.com'
 AUTHOR = 'Aniruddh Dubey'
-
-# What packages are required for this module to be executed?
 REQUIRED = [
     'selenium',
 ]
 
 setup(
     name=NAME,
-    version=0.0.1,
+    version='0.0.1',
     description=DESCRIPTION,
     long_description=long_description,
     author=AUTHOR,
     author_email=EMAIL,
     url=URL,
-    py_modules=['groups'],
-
-    entry_points={
-        'console_scripts': ['mycli=mymodule:cli'],
-    },
+    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     install_requires=REQUIRED,
     include_package_data=True,
     license='MIT',
